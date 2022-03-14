@@ -1,8 +1,54 @@
 \documentclass{article}
+\usepackage[a4paper, margin=1.5cm]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage{titling}
+\pretitle{\begin{center}\Huge}
+\posttitle{\end{center}\vskip 0.5em}
+\preauthor{
+    \begin{center}
+    \large \lineskip 0.5em%
+    \begin{tabular}[t]{c}
+}
+\postauthor{
+    \end{tabular}\par\end{center}
+}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.5cm}
+
+\usepackage{blindtext}
+
+\renewcommand{\familydefault}{\rmdefault}
+
+\title{Applications of machine learning in video games and video game development}
+\date{}
+\author{%
+    Dawid Sobczak\\
+    Carlos Cruz \and
+    Cael O' Flaherty \\
+    Tomek Zajas
+}
 
 \begin{document}
-Hey world!
+\maketitle
 
-This is a first document.
+\begin{multicols*}{2}
+
+\begin{abstract}
+    \textbf{\blindtext[1]}
+\end{abstract}
+
+\section{Introduction}
+\blindtext[2]
+
+\section{Other section}
+\blindtext[2]
+
+\section{Other section too}
+\blindtext[2]
+
+\section{Conclusion}
+\blindtext[2]
+
+\end{multicols*}
 \end{document}
