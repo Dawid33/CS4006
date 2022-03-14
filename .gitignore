@@ -4,4 +4,5 @@
 *.log
 *.synctex.gz
 *.pdf
+*.fdb_latexmk
 .vscode
