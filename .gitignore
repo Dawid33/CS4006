@@ -5,4 +5,8 @@
 *.synctex.gz
 *.pdf
 *.fdb_latexmk
+*.run.xml
+*.bcf
+*.blg
+*.bbl
 .vscode

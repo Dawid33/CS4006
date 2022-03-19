@@ -1,54 +1,44 @@
-\documentclass{article}
-\usepackage[a4paper, margin=1.5cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{titling}
-\pretitle{\begin{center}\Huge}
-\posttitle{\end{center}\vskip 0.5em}
-\preauthor{
-    \begin{center}
-    \large \lineskip 0.5em%
-    \begin{tabular}[t]{c}
-}
-\postauthor{
-    \end{tabular}\par\end{center}
-}
-
-\usepackage{multicol}
-\setlength{\columnsep}{0.5cm}
-
+\documentclass[journal,transmag]{IEEEtran}
+\usepackage{cite}
 \usepackage{blindtext}
 
-\renewcommand{\familydefault}{\rmdefault}
+\begin{document}
+\title{Artificial intelligence in video games and video game development}
 
-\title{Applications of machine learning in video games and video game development}
-\date{}
-\author{%
-    Dawid Sobczak\\
-    Carlos Cruz \and
-    Cael O' Flaherty \\
-    Tomek Zajas
+\author{
+    \IEEEauthorblockN{
+        Dawid Sobczak,
+        Tomek Zajas,
+        Carlos Cruz, 
+        Cael O' Flaherty
+    }
 }
 
-\begin{document}
 \maketitle
 
-\begin{multicols*}{2}
-
-\begin{abstract}
-    \textbf{\blindtext[1]}
-\end{abstract}
-
 \section{Introduction}
-\blindtext[2]
 
-\section{Other section}
-\blindtext[2]
+\IEEEPARstart{T}{he}
+\blindtext[1]
+\cite{einstein}
 
-\section{Other section too}
+\subsection{This is a subsection}
 \blindtext[2]
 
 \section{Conclusion}
+\blindtext[1]
+
+\appendices
+\section{The first appendix}
+\blindtext[1]
+
+
+\section*{Acknowledgment}
 \blindtext[2]
 
-\end{multicols*}
+
+\bibliographystyle{IEEEtran}
+\bibliography{References.bib}
+
 \end{document}
+
